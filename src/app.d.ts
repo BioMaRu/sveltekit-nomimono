@@ -3,10 +3,12 @@
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			token: string
+		}
 		// interface PageData {}
 		// interface Platform {}
 	}
 }
 
-export {};
+export {}

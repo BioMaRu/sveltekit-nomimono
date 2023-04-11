@@ -1,15 +1,15 @@
 <script lang="ts">
 	import '$style/main.scss';
 
-	import type { LayoutData } from './$types';
-
-	export let data: LayoutData;
+	import { SvelteToast } from '@zerodevx/svelte-toast';
 </script>
 
 <slot />
 
+<SvelteToast />
+
 <style>
 	:root {
-		--app-navbar-height: 72px;
+		--navbar-height: 72px;
 	}
 </style>

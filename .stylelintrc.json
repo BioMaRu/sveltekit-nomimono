@@ -1,9 +1,5 @@
 {
-	"extends": [
-		"stylelint-config-standard-scss",
-		"stylelint-config-prettier-scss",
-		"stylelint-prettier/recommended"
-	],
+	"extends": ["stylelint-config-standard-scss", "stylelint-prettier/recommended"],
 	"plugins": ["stylelint-order"],
 	"customSyntax": "postcss-html",
 	"overrides": [
@@ -13,6 +9,7 @@
 		}
 	],
 	"rules": {
+		"at-rule-empty-line-before": null,
 		"function-name-case": null,
 		"scss/at-function-pattern": null,
 		"order/order": [

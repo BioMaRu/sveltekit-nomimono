@@ -1,0 +1,38 @@
+// make swal appear over modal and anything else
+.swal2-container {
+	z-index: 9999 !important;
+}
+
+// custom swal
+.swal2-popup {
+	width: 28rem !important;
+	padding-top: 24px !important;
+	border-radius: 16px !important;
+}
+
+.swal2-icon {
+	margin-top: 12px !important;
+	border: none !important;
+}
+
+.swal2-title {
+	padding-top: 8px !important;
+	color: var(--color-text-default-100) !important;
+	font-weight: 500 !important;
+	font-size: 24px !important;
+}
+
+.swal2-html-container {
+	color: var(--color-text-default-200) !important;
+	font-size: 17px !important;
+}
+
+.swal2-actions {
+	gap: 16px;
+	width: 100% !important;
+	padding: 0 24px !important;
+
+	button {
+		flex: 1;
+	}
+}
