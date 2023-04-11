@@ -49,10 +49,15 @@
 		})
 	}
 
+	let pokemonName: string
 	let pokemon: any
 	function getData() {
+		if (!pokemonName) {
+			return
+		}
+
 		api
-			.invoke<any>('pikachu', {}, fetch, {
+			.invoke<any>(pokemonName, {}, fetch, {
 				method: 'GET',
 			})
 			.then((r) => {
@@ -84,7 +89,10 @@
 			<button class="nm-button">Submit</button>
 		</form>
 
-		<div>
+		<div class="_dp-f _g-4">
+			<div class="nm-input">
+				<input type="text" bind:value={pokemonName} placeholder="Try 'pikachu'" />
+			</div>
 			<button class="nm-button is-variant-accent" on:click={getData}>Fetch</button>
 		</div>
 

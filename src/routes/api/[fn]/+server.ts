@@ -5,7 +5,6 @@ import type { RequestEvent } from './$types'
 export async function POST({ locals, params, request, fetch }: RequestEvent) {
 	const token = locals.token
 
-	console.log(`${env.API_ENDPOINT}/${params.fn}`)
 	const resp = await fetch(`${env.API_ENDPOINT}/${params.fn}`, {
 		method: 'POST',
 		body: request.body,
@@ -16,8 +15,6 @@ export async function POST({ locals, params, request, fetch }: RequestEvent) {
 			...(token ? { authorization: `bearer ${token}` } : {}),
 		},
 	} as RequestInit & { duplex: 'half' })
-
-	console.log(resp)
 
 	return new Response(resp.body, {
 		status: resp.status,
