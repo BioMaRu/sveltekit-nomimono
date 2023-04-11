@@ -61,7 +61,6 @@
 				method: 'GET',
 			})
 			.then((r) => {
-				console.log(r)
 				pokemon = r
 			})
 	}
