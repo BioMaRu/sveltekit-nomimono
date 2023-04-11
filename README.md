@@ -1,8 +1,8 @@
 # Welcome
 
-### Sveltekit + Nomimono CSS
+## Sveltekit + Nomimono CSS
 
-## What's included
+### What's included
 
 - [sveltekit](https://kit.svelte.dev/)
 - [nomimono](https://nomimono.pages.dev/)
@@ -18,21 +18,26 @@
 - prettier
 - stylelint
 
-## For Vscode please install these extensions
+### For Vscode please install these extensions
 
 - eslint
 - stylelint
 - prettier
 - svelte for VS Code
 
-## getting start
+### Clone with digit
 
-In your project directory
+Inside your project directory
 
 ```bash
 npx degit biomaru/svelte-nomimono
+```
 
-# then
+to clone this repo in to your project directory
+
+### Development
+
+```bash
 yarn
 
 # then
