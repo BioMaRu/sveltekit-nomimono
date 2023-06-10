@@ -2,6 +2,7 @@
 	import '$style/main.scss';
 
 	import { SvelteToast } from '@zerodevx/svelte-toast';
+	
 	import { beforeNavigate } from '$app/navigation';
 	import { updated } from '$app/stores';
 

@@ -15,6 +15,7 @@ async function invoke<T>(
 		noRedirect?: boolean
 	},
 ): Promise<T> {
+	/* example, please rewrite to matched your use cases */
 	const body = await (opt?.method === 'GET' ? _get(fn, fetch) : _post(fn, args ?? {}, fetch))
 
 	if (!body.ok) {
@@ -44,6 +45,7 @@ async function invoke<T>(
 				break
 		}
 	}
+
 	return body
 }
 
@@ -76,6 +78,7 @@ async function _get(fn: string, fetch: typeof window.fetch) {
 }
 
 function handleApiError(error: Api.Error | undefined) {
+	/* example, please rewrite to matched your use cases */
 	if (error?.internalError) {
 		return toast.error('Internal Error')
 	} else if (error?.notFound) {

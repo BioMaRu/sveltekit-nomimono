@@ -5,7 +5,7 @@ function emit<T>(eventName: string, detail?: T): void {
 		return
 	}
 
-	window.dispatchEvent(new CustomEvent(eventName, detail ?? {}))
+	window.dispatchEvent(new CustomEvent(eventName, { detail } ?? {}))
 }
 
 export default {

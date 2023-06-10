@@ -3,6 +3,7 @@
 ## Sveltekit + Nomimono CSS
 
 ### What's included
+
 - typescript
 - [sveltekit](https://kit.svelte.dev/)
 - [nomimono](https://nomimono.pages.dev/)
@@ -33,7 +34,7 @@ Inside your project directory
 npx degit biomaru/svelte-nomimono
 ```
 
-to clone this repo in to your project directory
+To clone this repo files in to your project directory
 
 ### Development
 
