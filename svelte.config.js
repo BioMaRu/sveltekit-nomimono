@@ -15,6 +15,9 @@ const config = {
 			$components: 'src/components',
 			$types: 'src/@types',
 		},
+		version: {
+			pollInterval: 60 * 1000, // 1m
+		},
 	},
 }
 
