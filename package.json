@@ -39,6 +39,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/inter": "^5.0.3",
 		"@nomimono/nomimono-css": "^0.4.16",
 		"@nomimono/nomimono-theme": "^0.4.3",
 		"@zerodevx/svelte-toast": "^0.9.3",

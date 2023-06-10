@@ -18,6 +18,7 @@
 - eslint
 - prettier
 - stylelint
+- fontsource
 
 ### For Vscode please install these extensions
 
