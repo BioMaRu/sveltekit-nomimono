@@ -57,7 +57,7 @@
 		}
 
 		api
-			.invoke<any>(pokemonName, {}, fetch, {
+			.invoke<unknown>(pokemonName, {}, fetch, {
 				method: 'GET',
 			})
 			.then((r) => {
@@ -98,10 +98,10 @@
 		{#if pokemon}
 			<div>
 				<div class="_fs-8 _fw-500 _cl-primary">
-					{pokemon.name}
+					{pokemon?.name}
 				</div>
 				<img
-					src={pokemon.sprites.other['official-artwork'].front_default}
+					src={pokemon?.sprites?.other['official-artwork'].front_default}
 					alt="Pokemon"
 					width="500"
 				/>
