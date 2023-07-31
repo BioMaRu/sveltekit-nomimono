@@ -49,5 +49,10 @@
 		"sweetalert2": "^11.7.20",
 		"zod": "^3.21.4"
 	},
-	"packageManager": "yarn@3.6.1"
+	"packageManager": "yarn@3.6.1",
+	"engines": {
+		"node": ">=16",
+		"yarn": ">=3.0",
+		"npm": "please-use-yarn"
+	}
 }
